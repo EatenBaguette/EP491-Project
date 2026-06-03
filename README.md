@@ -1,5 +1,7 @@
 # Embodied
 
+https://github.com/EatenBaguette/EP491-Project
+
 ## Description
 
 This project is a multimodal interactive installation that aims to
@@ -11,8 +13,8 @@ connect the kinetic with the visual and auditory modes using the gestures and po
 Machine Learning
 
 1. Pose landmark recognition using the YOLO pose model, trained on the COCO dataset.
-2. Dynamic Time Warping (DTW) for gesture recognition. Bassed on the RTML Unity package. It was heavily modified as it did not implement true DTW. 
-3. ChatGPT and Junie for code generation.
+2. Dynamic Time Warping (DTW) for gesture recognition. Based on the RTML Unity package. It was heavily modified as it did not implement true DTW. 
+3. ChatGPT and Junie for help with code.
 
 Other Tools
 
