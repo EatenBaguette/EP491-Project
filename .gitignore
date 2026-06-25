@@ -185,3 +185,7 @@ crashlytics-build.properties
 
 ##### Other #######
 *.mp4
+
+### Blender #####
+*.blend
+*.blend1
