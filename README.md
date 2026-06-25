@@ -63,6 +63,10 @@ https://www.youtube.com/watch?v=wvK6MNlmCCE
 
 ## Import Model to Unity
 
+Video demonstration: https://drive.google.com/file/d/17FweLmu4y49teMO--eSW9yjIq7KeXVXD/view?usp=drive_link 
+
+Large glb file needed to run project: https://www.icloud.com/iclouddrive/0b4v8cb1RspI2TMfxygfHUD8Q#Fractal_Noise
+
 The main issue was that to "grow" the model in realtime, the entire mesh has to be allocated in memory, meaning I have to find a different way to animate the geometry repetitions. Instead, the goal is to store a float percentage of total repetitions (repetition progress) in the R value of a color vector on each vertex. In unity Shader Graph, this value can be used to show or hide the geometry.
 
 Update: I downloaded the package from this website (https://github.com/atteneder/glTFast) for converting glb files to prefabs. However, the vertex color data didn't work. I tested it by making a shader graph with the vertex color connected to base color. It should have been a gradient from black to red but it was all gray.
