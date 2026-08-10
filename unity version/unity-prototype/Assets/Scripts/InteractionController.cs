@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class InteractionController : MonoBehaviour
@@ -13,10 +14,19 @@ public class InteractionController : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private float decaySpeed = 1f;
     [SerializeField] private System.Collections.Generic.List<GestureSO> gestures;
-    [SerializeField] private float movementEnergyMultiplier = 10f;
+    [SerializeField] private float movementEnergyMultiplier = 1f;
+    [SerializeField] private float movementEnergyDecayMultiplier = 1f;
+
+    [Header("Debug")] 
+    [SerializeField] private float movementEnergy = 0f;
+    [SerializeField] private float handHeight = 0f;
+    [SerializeField] private float maxMovementEnergy = 0f;
 
     private InteractionSignals signals = new InteractionSignals();
-    private float lastHandDistance = -1f;
+    private Vector2 lastLeftHandPos = Vector2.zero;
+    private Vector2 lastRightHandPos = Vector2.zero;
+    private bool leftHandTracked = false;
+    private bool rightHandTracked = false;
 
     public InteractionSignals Signals => signals;
 
@@ -68,6 +78,16 @@ public class InteractionController : MonoBehaviour
         {
             visualController.ApplySignals(signals);
         }
+        // 9. Pass signals to AudioController
+        if (audioController != null)
+        {
+            audioController.ApplySignals(signals);
+        }
+        
+        // Debug
+        movementEnergy = signals.MovementEnergy;
+        if (movementEnergy > maxMovementEnergy) maxMovementEnergy = movementEnergy;
+        handHeight = signals.HandHeight;
     }
 
     private void ApplyGestureInfluence(int index)
@@ -101,40 +121,56 @@ public class InteractionController : MonoBehaviour
 
         // Get the first pose (assuming single user interaction for now)
         var pose = detectLandmarks.poses[0];
-        if (pose == null || pose.keypoints == null) return;
+        if (pose == null || pose.landmarks == null) return;
 
-        Vector2 leftWrist = GetKeypointPosition(pose, DetectLandmarks.Keypoint.LeftWrist);
-        Vector2 rightWrist = GetKeypointPosition(pose, DetectLandmarks.Keypoint.RightWrist);
-        Vector2 leftHip = GetKeypointPosition(pose, DetectLandmarks.Keypoint.LeftHip);
-        Vector2 rightHip = GetKeypointPosition(pose, DetectLandmarks.Keypoint.RightHip);
-        Vector2 leftShoulder = GetKeypointPosition(pose, DetectLandmarks.Keypoint.LeftShoulder);
-        Vector2 rightShoulder = GetKeypointPosition(pose, DetectLandmarks.Keypoint.RightShoulder);
+        Vector2 leftWrist = GetLandmarkPosition(pose, DetectLandmarks.Landmark.LeftWrist);
+        Vector2 rightWrist = GetLandmarkPosition(pose, DetectLandmarks.Landmark.RightWrist);
 
         // Update basic positions
         signals.LeftHandPosition = leftWrist;
         signals.RightHandPosition = rightWrist;
-        signals.BodyCenter = (leftHip + rightHip + leftShoulder + rightShoulder) * 0.25f;
+        signals.BodyCenter = pose.position;
 
-        // Compute HandDistance (normalized 0..1)
-        // Since we are in screen/normalized coordinates (0..1 usually from DetectLandmarks), 
-        // a distance of 1.0 means across the whole screen.
-        if (leftWrist != Vector2.zero && rightWrist != Vector2.zero)
+        float deltaMovement = 0f;
+        
+        if (leftWrist != Vector2.zero && lastLeftHandPos != Vector2.zero)
         {
-            float currentDistance = Vector2.Distance(leftWrist, rightWrist);
-            signals.HandDistance = currentDistance;
-
-            if (lastHandDistance >= 0)
+            float dist = Vector2.Distance(leftWrist, lastLeftHandPos);
+            deltaMovement += Math.Abs(dist);
+            if (dist > 0.0001f)
             {
-                float deltaDistance = Mathf.Abs(currentDistance - lastHandDistance);
-                // Add to movement energy so it can accumulate and decay
-                signals.MovementEnergy += deltaDistance * movementEnergyMultiplier;
+                signals.LeftHandDirection = (leftWrist - lastLeftHandPos).normalized;
             }
-            lastHandDistance = currentDistance;
         }
         else
         {
-            // If we lose tracking, we reset lastHandDistance to avoid huge jumps when it returns
-            lastHandDistance = -1f;
+            signals.LeftHandDirection = Vector2.zero;
+        }
+
+        if (rightWrist != Vector2.zero && lastRightHandPos != Vector2.zero)
+        {
+            float dist = Vector2.Distance(rightWrist, lastRightHandPos);
+            deltaMovement += Math.Abs(dist);
+            if (dist > 0.0001f)
+            {
+                signals.RightHandDirection = (rightWrist - lastRightHandPos).normalized;
+            }
+        }
+        else
+        {
+            signals.RightHandDirection = Vector2.zero;
+        }
+        
+        lastLeftHandPos = leftWrist;
+        lastRightHandPos = rightWrist;
+
+        // Add total combined movement to energy
+        signals.MovementEnergy = deltaMovement * movementEnergyMultiplier;
+
+        // Maintain HandDistance signal for other systems (Visuals, etc)
+        if (leftWrist != Vector2.zero && rightWrist != Vector2.zero)
+        {
+            signals.HandDistance = Vector2.Distance(leftWrist, rightWrist);
         }
 
         // Compute AverageHandHeight (normalized 0..1)
@@ -158,14 +194,17 @@ public class InteractionController : MonoBehaviour
         //              $" Hand distance: {signals.HandDistance}" +
         //              $"Movement Energy: {signals.MovementEnergy}");
         //}
+        
+        signals.MovementEnergyDecayMultiplier = movementEnergyDecayMultiplier;
+        
     }
 
-    private Vector2 GetKeypointPosition(DetectLandmarks.Pose pose, DetectLandmarks.Keypoint keypoint)
+    private Vector2 GetLandmarkPosition(DetectLandmarks.Pose pose, DetectLandmarks.Landmark landmark)
     {
-        int index = (int)keypoint;
-        if (index >= 0 && index < pose.keypoints.Length)
+        int index = (int)landmark;
+        if (index >= 0 && index < pose.landmarks.Length)
         {
-            return pose.keypoints[index].position;
+            return pose.landmarks[index].position;
         }
         return Vector2.zero;
     }

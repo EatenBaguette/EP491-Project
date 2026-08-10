@@ -76,3 +76,82 @@ Update: It turns out the problem was during export from Blender. I was correct i
 I used a small number of points (6) to determine that the iteration process was working properly (tested by setting the base color to the vertex color, which should gradient from black to red as the iterations progress). It worked! I then recreated the final geometry and exported it. I created a shader that sets the alpha value based on the iteration progress and I was able to slide the default value and see the geometry grow!
 
 Next, I created a basic slider UI with target value and speed. The target value sets the target iteration progress value, while speed sets the speed that it interpolates towards that value to make it smoother.
+
+## Convert Model to something with a splatter texture
+
+https://www.youtube.com/watch?v=OgCZCd7QV1A
+
+Blender Geometry Node Psuedocode:
+
+**Scatter Points along *existing* curve**:
+*# instead I can generate curves using repeat*
+
+Curve => points 
+=> delete geometry with random value, boolean, set probability
+=> set position, use noise color => math / normalize / scale => offset
+
+**Duplicate those points and set their position by noise**:
+
+=> duplicate elements => set position, same color noise =>scale=>offset
+Adjust noise to 4d with Index=>W, adjust scale of set pos of duplicated points
+=> points to volume with same voxel and radius size, small
+=> volume to mesh
+
+volume => mesh => out
+
+Scattered points =>
+
+Moving hands shows new instances of the paint meshes (eventually figure out how to make this take less memory. For now, use a pool of meshes with reveal set to zero so it isn't rendered.
+1. Generic paint mesh. Could be a few dif versions, maybe 5
+2. Make paint meshes expand in more than one direction
+
+New idea: hands up down left right equals direction, distance between hands equals how much offset the paint has. Export various models and choose between which to use.
+
+After paint has been left, it slightly grows a bit, then engross and settles before slightly pulsing. Also could  
+
+### The Process / Issues
+1. Took points and duplicated them, offset them with noise
+2. Remeshed by converting to a volume and back to a mesh
+3. The problem: this lost the v_color data so it couldn't be revealed for the "grow" effect in Unity
+4. Solution: make it still look paint like without remeshing
+    - this took a long time but I made it work
+    - duplicate all the points before converting to curves. Store the duplicate as d_index on each set of points
+    - offset position of all points using noise
+    - create a curve group ID with p_index (how many big curves) multiplied by 1000, with v_index (iterations) added to it as a sub value. 
+    - use this Id to create curves, resulting in curves connecting all duplicates for every original iteration (kinda like a bunch of concentric circles growing outwards)
+    - use the same ID to randomly delete points, resulting in entire concentric circle to be deleted, thinning it out a bit so its not as connected
+    - create another ID using the duplicate index as the major (times 1000) and adding v_index (iterations) to it. Delete points using this, which results in duplicate points for each iteration being randomly deleted. This keeps the curve but makes it shorter, altering the length of each small curve
+    - these precise delete sets model the random spread of when I used remeshing.
+    - keep the quadrilateral curve to mesh
+    - subdivide the surface so its smoother like paint
+
+## Implement New paint texture
+- added a particle system that looks like stars for when nothing yet
+
+Pool system that starts them deactivated
+Moves them to the location of direction of hands and activates them
+Hand speed sets acceleration, hand distance sets target value
+
+Dictionary of VisualObject, targetReveal and
+VisualObject, acceleration
+VisualObject, currentRevealValue
+
+Update should run, for each VisualObject in VisualObjects2
+currentValue = Mathf.Lerp(currentValue, targetValue, acceleration * Time.deltaTime);
+material.SetFloat(shaderValueName, currentValue);
+
+
+- bounding box helps calculate distance,
+- default shoulders feet, choose the nose or shoulders, and feet, if time have duyanicay pick higher points and have a scale calculate a distance away. Use a running average to stabilize the distance
+- running average for pose stabilization
+- if something isn't available, return a very low or large value
+-
+
+For pooling: start with over budgeting, later implement scaling pooling system
+- eventually look into the Unity Pooling library
+- spawn everything in activate it, then update the reveal amount when you move it, 
+
+- make interaction signals work with multiple people
+- each pose gets its own interaction signals and its own gesture recognizer
+- there's also a combined interaction signals
+

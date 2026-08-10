@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964182cd506804cce9792495bbb4a953, type: 3}
+  m_Name: MidiNoteSet_Lydian
+  m_EditorClassIdentifier: Assembly-CSharp::MidiNoteSetDefinition
+  noteSetSwitchId: 3431951472
+  baseMidiNote: 24
+  voicings:
+  - voicingSwitchId: 3293689696
+    octaveOffset: 2
+    relativeNotes: 0000000009000000
+  - voicingSwitchId: 3293689699
+    octaveOffset: 2
+    relativeNotes: 040000000c000000
+  - voicingSwitchId: 3293689698
+    octaveOffset: 2
+    relativeNotes: 06000000070000000c0000000e000000
+  - voicingSwitchId: 3293689701
+    octaveOffset: 2
+    relativeNotes: 070000000c0000000e00000010000000
+  - voicingSwitchId: 3293689700
+    octaveOffset: 3
+    relativeNotes: 00000000020000000400000006000000
+  - voicingSwitchId: 3293689703
+    octaveOffset: 3
+    relativeNotes: 02000000040000000600000009000000
+  - voicingSwitchId: 3293689702
+    octaveOffset: 3
+    relativeNotes: 0400000006000000090000000c000000
+  - voicingSwitchId: 3293689705
+    octaveOffset: 3
+    relativeNotes: 06000000090000000c0000000e000000
+  - voicingSwitchId: 3293689704
+    octaveOffset: 3
+    relativeNotes: 070000000c0000000e00000010000000
+  - voicingSwitchId: 3276912014
+    octaveOffset: 4
+    relativeNotes: 00000000020000000400000006000000

@@ -5,20 +5,33 @@ public class VisualController : MonoBehaviour
 {
     public static VisualController Instance;
 
-    public List<VisualObject> VisualObjects = new List<VisualObject>();
+    public List<VisualCube> VisualCubes = new List<VisualCube>();
+    public List<VisualPaint> VisualPaints = new List<VisualPaint>();
 
     [Header("Pool Settings")]
-    [SerializeField] private VisualObject visualObjectPrefab;
-    [SerializeField] private int objectCount = 50;
+    [SerializeField] private VisualCube visualCubePrefab;
+    [SerializeField] private int cubeCount = 50;
+    [SerializeField] private VisualPaint visualPaintPrefab;
+    [SerializeField] private int paintCount = 50;
+
+    [SerializeField] private bool activateVisualCubesOnStart = false;
+    [SerializeField] private bool activateVisualPaintsOnStart = false;
     
+    public enum StartState { EdgeOrbit, Idle, Lines, Squares, Scatter, Collapse, Paint }
     public enum StartMode { Center, Field }
+    
     [Header("Start Settings")]
+    [SerializeField] private StartState startState = StartState.Idle;
     [SerializeField] private StartMode startMode = StartMode.Center;
     [SerializeField] private float fieldStartDepth = 5f;
     
-    public Vector3 PrefabScale => visualObjectPrefab != null
-        ? visualObjectPrefab.transform.localScale
+    public Vector3 PrefabScale => visualCubePrefab != null
+        ? visualCubePrefab.transform.localScale
         : Vector3.one;
+    public Vector3 PaintPrefabScale => visualPaintPrefab != null
+        ? visualPaintPrefab.transform.localScale
+        : Vector3.one;
+    
 
     [Header("Force Settings")]
     [SerializeField] private float edgePushForce = 5f;
@@ -36,6 +49,22 @@ public class VisualController : MonoBehaviour
 
     [Header("Idle Settings")]
     public float idleGravity = 5f;
+
+    [Header("Paint State Settings")]
+    public float paintEnergyThreshold = 0.5f;
+    public int paintObjectCount = 5;
+    public float paintLineLength = 2f;
+    public float minHandDistance = 0.1f;
+    public float maxHandDistance = 1.0f;
+    public float minHandHeight = -350f;
+    public float maxHandHeight = 100f;
+    public float minRevealAcceleration = 0.01f;
+    public float maxRevealAcceleration = 0.2f;
+    public Vector3 paintVelocityDirection = new Vector3(0, 0, 1);
+    public float paintVelocitySpeed = 1f;
+    public float paintConeAngle = 30f;
+    public float paintFadeDistance = 20f;
+    public float maxMovementEnergy = 300;
 
     [Header("Viewport Repel Mask")]
     public float centerRepelRadius = 2.5f;
@@ -55,7 +84,10 @@ public class VisualController : MonoBehaviour
     public SquaresState Squares;
     public ScatterState Scatter;
     public CollapseState Collapse;
-
+    public PaintState Paint;
+    
+    
+    
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -77,6 +109,7 @@ public class VisualController : MonoBehaviour
         Squares = new SquaresState(this);
         Scatter = new ScatterState(this);
         Collapse = new CollapseState(this);
+        Paint = new PaintState(this);
     }
 
     void Start()
@@ -84,23 +117,60 @@ public class VisualController : MonoBehaviour
         SpawnObjects();
         // Initially objects are inactive. We activate them when we start the first state.
         ActivateObjects();
-        ChangeState(Idle);
+        ChangeState(GetStartState());
+    }
+    
+    private VisualState GetStartState()
+    {
+        switch (startState)
+        {
+            case StartState.EdgeOrbit:
+                return EdgeOrbit;
+
+            case StartState.Idle:
+                return Idle;
+
+            case StartState.Lines:
+                return Lines;
+
+            case StartState.Squares:
+                return Squares;
+
+            case StartState.Scatter:
+                return Scatter;
+
+            case StartState.Collapse:
+                return Collapse;
+
+            case StartState.Paint:
+                return Paint;
+
+            default:
+                return Idle;
+        }
     }
 
     private void SpawnObjects()
     {
-        if (visualObjectPrefab == null)
+        if (visualCubePrefab == null)
         {
-            Debug.LogError("[VisualController] VisualObject prefab not assigned!");
+            Debug.LogError("[VisualController] VisualCube prefab not assigned!");
             return;
         }
 
-        for (int i = 0; i < objectCount; i++)
+        for (int i = 0; i < cubeCount; i++)
         {
-            VisualObject obj = Instantiate(visualObjectPrefab, Vector3.zero, Quaternion.identity, transform);
+            VisualCube obj = Instantiate(visualCubePrefab, Vector3.zero, Quaternion.identity, transform);
             obj.SetFriction(friction);
             obj.SetActive(false);
-            VisualObjects.Add(obj);
+            VisualCubes.Add(obj);
+        }
+        for (int i = 0; i < paintCount; i++)
+        {
+            VisualPaint obj = Instantiate(visualPaintPrefab, Vector3.zero, Random.rotation, transform);
+            obj.SetFriction(friction);
+            obj.SetActive(false);
+            VisualPaints.Add(obj);
         }
     }
 
@@ -113,7 +183,7 @@ public class VisualController : MonoBehaviour
             spawnCenter = cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 10f));
         }
 
-        foreach (var obj in VisualObjects)
+        foreach (var obj in VisualCubes)
         {
             if (obj != null)
             {
@@ -131,7 +201,14 @@ public class VisualController : MonoBehaviour
                     );
                     obj.ResetObject(spawnCenter + randomPos);
                 }
-                obj.SetActive(true);
+                if (activateVisualCubesOnStart) obj.SetActive(true);
+            }
+        }
+        foreach (var obj in VisualPaints)
+        {
+            if (obj != null)
+            {
+               if (activateVisualPaintsOnStart) obj.SetActive(true);
             }
         }
     }
@@ -140,7 +217,12 @@ public class VisualController : MonoBehaviour
     {
         currentState?.Update();
 
-        foreach (var obj in VisualObjects)
+        foreach (var obj in VisualCubes)
+        {
+            if (obj != null && obj.gameObject.activeSelf)
+                obj.Tick(Time.deltaTime);
+        }
+        foreach (var obj in VisualPaints)
         {
             if (obj != null && obj.gameObject.activeSelf)
                 obj.Tick(Time.deltaTime);
@@ -180,7 +262,7 @@ public class VisualController : MonoBehaviour
             bodyCenterWorld = cam.ViewportToWorldPoint(new Vector3(signals.BodyCenter.x, signals.BodyCenter.y, 10f));
         }
 
-        foreach (var obj in VisualObjects)
+        foreach (var obj in VisualCubes)
         {
             if (obj == null || !obj.gameObject.activeSelf) continue;
             
@@ -260,8 +342,8 @@ public class VisualController : MonoBehaviour
     {
         if (signals.GestureChanged)
         {
-            if (signals.GestureIndex == 0) ChangeState(Idle);
-            else if (signals.GestureIndex == 1) ChangeState(EdgeOrbit);
+            //if (signals.GestureIndex == 0) ChangeState(Idle);
+            //else if (signals.GestureIndex == 1) ChangeState(EdgeOrbit);
         }
     }
 }

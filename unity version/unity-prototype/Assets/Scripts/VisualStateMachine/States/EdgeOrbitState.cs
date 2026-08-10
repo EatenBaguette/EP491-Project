@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class EdgeOrbitState : VisualState
 {
-    private Dictionary<VisualObject, float> orbitRadii = new Dictionary<VisualObject, float>();
-    private Dictionary<VisualObject, Vector3> orbitAxes = new Dictionary<VisualObject, Vector3>();
-    private Dictionary<VisualObject, float> orbitDirections = new Dictionary<VisualObject, float>();
-    private Dictionary<VisualObject, float> orbitSpeedMultipliers = new Dictionary<VisualObject, float>();
+    private Dictionary<VisualCube, float> orbitRadii = new Dictionary<VisualCube, float>();
+    private Dictionary<VisualCube, Vector3> orbitAxes = new Dictionary<VisualCube, Vector3>();
+    private Dictionary<VisualCube, float> orbitDirections = new Dictionary<VisualCube, float>();
+    private Dictionary<VisualCube, float> orbitSpeedMultipliers = new Dictionary<VisualCube, float>();
 
     public EdgeOrbitState(VisualController controller) : base(controller) { }
 
@@ -25,7 +25,7 @@ public class EdgeOrbitState : VisualState
         arrivalOrbitGravity = controller.orbitGravity;
         arrivalCenterRepelForce = controller.centerRepelForce;
 
-        foreach (var obj in controller.VisualObjects)
+        foreach (var obj in controller.VisualCubes)
         {
             if (obj == null || !obj.gameObject.activeSelf) continue;
 
@@ -50,7 +50,7 @@ public class EdgeOrbitState : VisualState
 {
     Camera cam = Camera.main;
 
-    foreach (var obj in controller.VisualObjects)
+    foreach (var obj in controller.VisualCubes)
     {
         if (obj == null || !obj.gameObject.activeSelf) continue;
         if (!orbitRadii.ContainsKey(obj)) continue;
@@ -163,7 +163,7 @@ public class EdgeOrbitState : VisualState
 
     //void NotUsed()
     //{
-        //foreach (var obj in controller.VisualObjects)
+        //foreach (var obj in controller.VisualCubes)
         //{
             //if (!orbitTargets.ContainsKey(obj)) continue;
 //

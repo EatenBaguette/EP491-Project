@@ -1,10 +1,9 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class VisualObject : MonoBehaviour
 {
-    private Renderer renderer;
-    private Material material;
+    protected Renderer renderer;
+    protected Material material;
     [Header("Physics")]
     [SerializeField] protected Vector3 velocity;
     [SerializeField] protected float friction = 0.95f;
@@ -13,6 +12,8 @@ public class VisualObject : MonoBehaviour
     public bool useBounds = false;
     [SerializeField] protected bool wrapBounds = true;
     [SerializeField] protected bool clampBounds = false;
+    
+    [Header("Rendering")] [SerializeField] protected bool interpolateToWhite = false;
 
     public Vector3 Velocity => velocity;
     
@@ -22,10 +23,7 @@ public class VisualObject : MonoBehaviour
         material = renderer.material;
     }
 
-    void Start()
-    {
-        material.SetTextureScale("_BaseMap", new Vector2(Random.Range(1f, 2.6f), Random.Range(0.25f, 2.6f)));
-    }
+    
 
     public void ApplyForce(Vector3 force)
     {
@@ -42,7 +40,7 @@ public class VisualObject : MonoBehaviour
         gameObject.SetActive(active);
     }
 
-    public void ResetObject(Vector3 position)
+    public virtual void ResetObject(Vector3 position)
     {
         transform.position = position;
         velocity = Vector3.zero;
@@ -58,12 +56,8 @@ public class VisualObject : MonoBehaviour
         float damping = Mathf.Pow(friction, deltaTime * 60f);
         velocity *= damping;
 
-        if (useBounds)
-        {
-            HandleBounds();
-        }
-        
-        material.color = Color.Lerp(material.color, Color.white, deltaTime);
+        if (useBounds) HandleBounds();
+        if (interpolateToWhite) material.color = Color.Lerp(material.color, Color.white, deltaTime);
     }
 
     protected virtual void HandleBounds()

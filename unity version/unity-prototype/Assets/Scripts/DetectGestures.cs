@@ -6,16 +6,16 @@ public class DetectGestures : MonoBehaviour
 {
     public static DetectGestures Instance;
     
-    private const int KeypointCount = 17;
-    private const int CoordinatesPerKeypoint = 2;
-    private const int LandmarkFrameSize = KeypointCount * CoordinatesPerKeypoint;
+    private const int LandmarkCount = 17;
+    private const int CoordinatesPerLandmark = 2;
+    private const int LandmarkFrameSize = LandmarkCount * CoordinatesPerLandmark;
 
     [Header("RTML Settings")]
     [Tooltip("A reference to your RTMLCore component.")]
     public RTMLCore rtmlCore;
 
     [Header("Landmark Source")]
-    [Tooltip("The DetectLandmarks component that provides pose keypoints.")]
+    [Tooltip("The DetectLandmarks component that provides pose landmarks.")]
     public DetectLandmarks detectLandmarks;
 
     [Tooltip("If true, landmark coordinates are normalized around the hips/shoulders to make gestures less dependent on screen position and scale.")]
@@ -231,7 +231,7 @@ public class DetectGestures : MonoBehaviour
 
         DetectLandmarks.Pose pose = detectLandmarks.poses[0];
 
-        if (pose == null || pose.keypoints == null || pose.keypoints.Length < KeypointCount)
+        if (pose == null || pose.landmarks == null || pose.landmarks.Length < LandmarkCount)
         {
             return false;
         }
@@ -252,10 +252,10 @@ public class DetectGestures : MonoBehaviour
 
     private void FillRawLandmarkFrame(DetectLandmarks.Pose pose, float[] frame)
     {
-        for (int i = 0; i < KeypointCount; i++)
+        for (int i = 0; i < LandmarkCount; i++)
         {
-            Vector2 position = pose.keypoints[i].position;
-            int frameIndex = i * CoordinatesPerKeypoint;
+            Vector2 position = pose.landmarks[i].position;
+            int frameIndex = i * CoordinatesPerLandmark;
 
             frame[frameIndex] = position.x;
             frame[frameIndex + 1] = position.y;
@@ -264,10 +264,10 @@ public class DetectGestures : MonoBehaviour
 
     private void FillNormalisedLandmarkFrame(DetectLandmarks.Pose pose, float[] frame)
     {
-        Vector2 leftHip = pose.keypoints[(int)DetectLandmarks.Keypoint.LeftHip].position;
-        Vector2 rightHip = pose.keypoints[(int)DetectLandmarks.Keypoint.RightHip].position;
-        Vector2 leftShoulder = pose.keypoints[(int)DetectLandmarks.Keypoint.LeftShoulder].position;
-        Vector2 rightShoulder = pose.keypoints[(int)DetectLandmarks.Keypoint.RightShoulder].position;
+        Vector2 leftHip = pose.landmarks[(int)DetectLandmarks.Landmark.LeftHip].position;
+        Vector2 rightHip = pose.landmarks[(int)DetectLandmarks.Landmark.RightHip].position;
+        Vector2 leftShoulder = pose.landmarks[(int)DetectLandmarks.Landmark.LeftShoulder].position;
+        Vector2 rightShoulder = pose.landmarks[(int)DetectLandmarks.Landmark.RightShoulder].position;
 
         Vector2 hipCentre = GetAverageNonZero(leftHip, rightHip);
         Vector2 shoulderCentre = GetAverageNonZero(leftShoulder, rightShoulder);
@@ -286,10 +286,10 @@ public class DetectGestures : MonoBehaviour
             bodyScale = 1f;
         }
 
-        for (int i = 0; i < KeypointCount; i++)
+        for (int i = 0; i < LandmarkCount; i++)
         {
-            Vector2 position = pose.keypoints[i].position;
-            int frameIndex = i * CoordinatesPerKeypoint;
+            Vector2 position = pose.landmarks[i].position;
+            int frameIndex = i * CoordinatesPerLandmark;
 
             if (position == Vector2.zero)
             {

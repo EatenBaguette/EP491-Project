@@ -32,11 +32,15 @@ public class InteractionSignals
     public float HandDistance;
     public float HandHeight;
     public float MovementEnergy;
+    public Vector2 LeftHandDirection;
+    public Vector2 RightHandDirection;
 
     public void ResetFrameFlags()
     {
         GestureChanged = false;
     }
+    
+    public float MovementEnergyDecayMultiplier = 1f;
 
     public void Clamp01()
     {
@@ -53,7 +57,7 @@ public class InteractionSignals
         AudioTension = Mathf.Clamp01(AudioTension);
         AudioPulse = Mathf.Clamp01(AudioPulse);
         
-        MovementEnergy = Mathf.Clamp01(MovementEnergy);
+        //MovementEnergy = Mathf.Clamp01(MovementEnergy);
     }
 
     public void Decay(float deltaTime, float decaySpeed)
@@ -71,6 +75,6 @@ public class InteractionSignals
         AudioTension = Mathf.MoveTowards(AudioTension, 0f, deltaTime * decaySpeed);
         AudioPulse = Mathf.MoveTowards(AudioPulse, 0f, deltaTime * decaySpeed);
         
-        MovementEnergy = Mathf.MoveTowards(MovementEnergy, 0f, deltaTime * decaySpeed);
+        MovementEnergy = Mathf.MoveTowards(MovementEnergy, 0f, deltaTime * decaySpeed*MovementEnergyDecayMultiplier);
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class IdleState : VisualState
 {
-    private Dictionary<VisualObject, Vector3> gravityPoints = new Dictionary<VisualObject, Vector3>();
+    private Dictionary<VisualCube, Vector3> gravityPoints = new Dictionary<VisualCube, Vector3>();
 
     public IdleState(VisualController controller) : base(controller) { }
 
@@ -12,7 +12,7 @@ public class IdleState : VisualState
         Debug.Log("Entering Idle State");
         gravityPoints.Clear();
 
-        foreach (var obj in controller.VisualObjects)
+        foreach (var obj in controller.VisualCubes)
         {
             if (obj == null || !obj.gameObject.activeSelf) continue;
             gravityPoints[obj] = obj.transform.position;
@@ -21,7 +21,7 @@ public class IdleState : VisualState
 
     public override void Update()
     {
-        foreach (var obj in controller.VisualObjects)
+        foreach (var obj in controller.VisualCubes)
         {
             if (obj == null || !obj.gameObject.activeSelf) continue;
             if (!gravityPoints.ContainsKey(obj)) continue;
