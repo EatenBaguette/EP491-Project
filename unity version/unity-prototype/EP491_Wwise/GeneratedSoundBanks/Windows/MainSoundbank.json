@@ -1,0 +1,1142 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "534561221",
+    "Type": "User",
+    "GUID": "{B30CFE09-FE8F-4713-A101-F6B648262219}",
+    "Language": "SFX",
+    "Hash": "{D17FCA8B-D0FB-123A-23A4-6489BA9DF729}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSoundbank",
+    "ShortName": "MainSoundbank",
+    "Path": "MainSoundbank.bnk",
+    "Media": [
+     {
+      "Id": "81014218",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C1_64.wav",
+      "CachePath": "3F/{3F340C2A-354D-2D08-521D-C017CA70434D}.wem"
+     },
+     {
+      "Id": "108799585",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#3_64.wav",
+      "CachePath": "EC/{ECF635BB-514E-1480-9A25-1DCB03FD94C1}.wem"
+     },
+     {
+      "Id": "160603343",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#2_127.wav",
+      "CachePath": "7D/{7DAD2E37-8568-C984-7BDD-46B159731BEA}.wem"
+     },
+     {
+      "Id": "163540962",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E3_64.wav",
+      "CachePath": "74/{741672D3-366E-1B97-5EAA-E720E4892F0A}.wem"
+     },
+     {
+      "Id": "187290619",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E3_127.wav",
+      "CachePath": "E1/{E1423ED7-D19C-6C61-527D-51DC625A2CDD}.wem"
+     },
+     {
+      "Id": "220648264",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C5_127.wav",
+      "CachePath": "84/{8479CAF4-A35B-2F83-263F-9D58F81041FB}.wem"
+     },
+     {
+      "Id": "249786026",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#3_64.wav",
+      "CachePath": "3D/{3D95BDBC-43A0-B6DD-6783-5D99C9E20A7E}.wem"
+     },
+     {
+      "Id": "253689902",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#3_127.wav",
+      "CachePath": "7C/{7C366CB7-94E9-66AD-9177-A2DB2859A90C}.wem"
+     },
+     {
+      "Id": "293726394",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E1_127.wav",
+      "CachePath": "95/{957ECD0F-0233-3DF2-7FE9-03A1E88FFA77}.wem"
+     },
+     {
+      "Id": "311776810",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#4_127.wav",
+      "CachePath": "9F/{9F6FBB6B-FA6B-B1AE-01A3-4413C40471F6}.wem"
+     },
+     {
+      "Id": "328936544",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E1_64.wav",
+      "CachePath": "0D/{0D6497AA-6D78-C9F7-2161-189FE1B29E88}.wem"
+     },
+     {
+      "Id": "335671605",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C3_127.wav",
+      "CachePath": "B0/{B04DF2FF-F829-1626-46C2-A04250073FDD}.wem"
+     },
+     {
+      "Id": "345907256",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "1secSilence.wav",
+      "CachePath": "BC/{BC77326C-E5F7-3557-ACD2-A5A5DCDE695E}.wem"
+     },
+     {
+      "Id": "354348945",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C3_64.wav",
+      "CachePath": "26/{261CB9B0-D0E2-EFCB-2D96-5A40883E6083}.wem"
+     },
+     {
+      "Id": "358911386",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E2_64.wav",
+      "CachePath": "A4/{A4A4B2E5-0F64-7C12-B60D-8B9192D12099}.wem"
+     },
+     {
+      "Id": "375892740",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#4_127.wav",
+      "CachePath": "B1/{B1B04690-9935-A8B3-1D5C-2E0FE72C0C08}.wem"
+     },
+     {
+      "Id": "378246469",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#1_64.wav",
+      "CachePath": "FB/{FBE634FA-86D8-23A9-F7E5-F00143F526A7}.wem"
+     },
+     {
+      "Id": "431461022",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C2_127.wav",
+      "CachePath": "B1/{B1275A75-E145-88BC-4262-4A919E2E09F8}.wem"
+     },
+     {
+      "Id": "436108680",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#3_127.wav",
+      "CachePath": "82/{82A2449D-CD0D-9D25-25B2-00D67CD2AB53}.wem"
+     },
+     {
+      "Id": "456909667",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C5_64.wav",
+      "CachePath": "3D/{3DFD9AF6-1072-DAB9-65E9-71E3EDCB482C}.wem"
+     },
+     {
+      "Id": "487291621",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C1_127.wav",
+      "CachePath": "EA/{EA69117D-A25E-D88E-DDEF-0980E47E099C}.wem"
+     },
+     {
+      "Id": "505690608",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#1_64.wav",
+      "CachePath": "3D/{3D72FBA6-1016-E9ED-D43A-305C501AB050}.wem"
+     },
+     {
+      "Id": "520788626",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C4_127.wav",
+      "CachePath": "F5/{F5DE691E-34AA-F612-ED74-9A0BCDE016A1}.wem"
+     },
+     {
+      "Id": "530575871",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E1_127.wav",
+      "CachePath": "27/{2788FB42-7EEC-5571-29F3-2CF2CE5FFD2A}.wem"
+     },
+     {
+      "Id": "535957164",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E4_64.wav",
+      "CachePath": "6B/{6B662AD0-E8D9-3FF5-73C7-7A6051B4C055}.wem"
+     },
+     {
+      "Id": "573598210",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C1_127.wav",
+      "CachePath": "DB/{DBA43242-54CA-5698-23FD-F303976D7A06}.wem"
+     },
+     {
+      "Id": "581141264",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C4_64.wav",
+      "CachePath": "C4/{C4A38AED-4397-EC51-A19C-84FE411806CA}.wem"
+     },
+     {
+      "Id": "608262442",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E2_127.wav",
+      "CachePath": "8D/{8D287196-6AF8-E277-3B46-0EAC9F159015}.wem"
+     },
+     {
+      "Id": "627479635",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#4_64.wav",
+      "CachePath": "59/{59625FC6-68F0-0133-92A7-CBAF05C5E2A9}.wem"
+     },
+     {
+      "Id": "633442900",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#2_64.wav",
+      "CachePath": "4E/{4E578C66-8993-AC55-D19C-67A4AEFB4510}.wem"
+     },
+     {
+      "Id": "646312523",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#1_127.wav",
+      "CachePath": "9B/{9B8341BD-3B03-8766-453F-765ADD4037EC}.wem"
+     },
+     {
+      "Id": "659383082",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C2_64.wav",
+      "CachePath": "0C/{0C59E2D2-85D9-46CF-E093-95FFD22361BB}.wem"
+     },
+     {
+      "Id": "666381127",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C1_64.wav",
+      "CachePath": "9C/{9CB27366-958F-3FC0-2760-DA53C6170D99}.wem"
+     },
+     {
+      "Id": "669520541",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E4_127.wav",
+      "CachePath": "B1/{B16CD0F5-5B0F-AA04-51CF-84A9C9AA8CDB}.wem"
+     },
+     {
+      "Id": "671308466",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E2_64.wav",
+      "CachePath": "EE/{EE11E670-97D1-9A53-A211-36ED30FE480E}.wem"
+     },
+     {
+      "Id": "675839367",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#2_64.wav",
+      "CachePath": "A3/{A3D642D8-E49E-19CD-DDD7-DF465853EB91}.wem"
+     },
+     {
+      "Id": "777301135",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C2_127.wav",
+      "CachePath": "C0/{C0C1C08B-0871-F0FE-A762-0BA0033EBA92}.wem"
+     },
+     {
+      "Id": "779174018",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E1_64.wav",
+      "CachePath": "4D/{4DFD7CD4-EC01-9A1F-DB18-2282834FE2C0}.wem"
+     },
+     {
+      "Id": "780477623",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C4_127.wav",
+      "CachePath": "8B/{8B5FFF67-CCF6-A9D6-2119-E5D1F30173D5}.wem"
+     },
+     {
+      "Id": "805335745",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E3_64.wav",
+      "CachePath": "E2/{E27ED8FD-535F-F017-7189-C4F42AF715B5}.wem"
+     },
+     {
+      "Id": "846885721",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#4_64.wav",
+      "CachePath": "4F/{4F4A3EDB-9416-76EA-0CAF-D306435039BA}.wem"
+     },
+     {
+      "Id": "923545924",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C5_127.wav",
+      "CachePath": "47/{478EDC7F-ABEB-72C0-4619-FF429FF36AC8}.wem"
+     },
+     {
+      "Id": "923743735",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C3_64.wav",
+      "CachePath": "18/{186C431D-578F-64EE-19FC-0421CC127AE3}.wem"
+     },
+     {
+      "Id": "932034674",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C3_127.wav",
+      "CachePath": "76/{76EFD5C4-0E27-5C73-A2EF-B20939656584}.wem"
+     },
+     {
+      "Id": "934972760",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E2_127.wav",
+      "CachePath": "1F/{1FC08B62-1E99-99D4-8F9C-54B32032249C}.wem"
+     },
+     {
+      "Id": "985267907",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C4_64.wav",
+      "CachePath": "7D/{7DB0FE4D-01D6-8BF7-BD7C-957FB3D38579}.wem"
+     },
+     {
+      "Id": "985615113",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C5_64.wav",
+      "CachePath": "84/{8480A659-E950-21D7-027F-9B2E64834E92}.wem"
+     },
+     {
+      "Id": "989045613",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#2_127.wav",
+      "CachePath": "12/{1270998B-16D7-BD07-77EC-9D092B48345F}.wem"
+     },
+     {
+      "Id": "991430848",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E3_127.wav",
+      "CachePath": "10/{102EB736-037D-C15A-DC4E-351202B9CD76}.wem"
+     },
+     {
+      "Id": "1012036812",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E4_127.wav",
+      "CachePath": "22/{22D2DED8-0BF8-A378-D2D2-D242D856E775}.wem"
+     },
+     {
+      "Id": "1012454372",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_G#1_127.wav",
+      "CachePath": "6F/{6F8DD908-4137-9DDA-4F58-3C99B48E559D}.wem"
+     },
+     {
+      "Id": "1018831467",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_E4_64.wav",
+      "CachePath": "08/{08D5A006-070D-AB3D-B3E2-056784304245}.wem"
+     },
+     {
+      "Id": "1043145087",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano_C2_64.wav",
+      "CachePath": "93/{93C8A1C3-0839-7E96-D24E-1B6A5C4D3074}.wem"
+     }
+    ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "426166445",
+       "Name": "Compressor (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Music\\Piano\\[Effect Slot [0]: (Compressor)]\\Compressor (Custom)",
+       "GUID": "{411C95E9-C95C-4602-B4D9-0828742BFE50}",
+       "LibName": "Wwise Compressor",
+       "LibId": "7077891"
+      },
+      {
+       "Id": "625288806",
+       "Name": "Compressor (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Music\\Piano\\[Effect Slot [1]: (Compressor)]\\Compressor (Custom)",
+       "GUID": "{60C1EDEA-9714-4321-9445-1D9DCD68D0BE}",
+       "LibName": "Wwise Compressor",
+       "LibId": "7077891"
+      }
+     ],
+     "ShareSets": [
+      {
+       "Id": "1459522457",
+       "Name": "Brick_Wall_Minus_1dB_Peak_Fast_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Fast_Release",
+       "GUID": "{2144284E-7ADD-4341-86A4-4E468BEC9A2D}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "3066728522",
+      "Name": "Play_Chord_Voicing_Poll",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Chord_Voicing_Poll",
+      "GUID": "{1BBB7C8D-7E48-475B-A457-1F946881F05D}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "345907256"
+       }
+      ]
+     },
+     {
+      "Id": "3662170736",
+      "Name": "Play_Paint_State",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Paint_State",
+      "GUID": "{877D9DDD-84CB-4331-AD3A-D228C429281A}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "345907256"
+       }
+      ]
+     },
+     {
+      "Id": "1479974693",
+      "Name": "Play_Piano",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Piano",
+      "GUID": "{8C37EDD9-F7B9-479F-9738-2505248B6244}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "81014218"
+       },
+       {
+        "Id": "108799585"
+       },
+       {
+        "Id": "160603343"
+       },
+       {
+        "Id": "163540962"
+       },
+       {
+        "Id": "187290619"
+       },
+       {
+        "Id": "220648264"
+       },
+       {
+        "Id": "249786026"
+       },
+       {
+        "Id": "253689902"
+       },
+       {
+        "Id": "293726394"
+       },
+       {
+        "Id": "311776810"
+       },
+       {
+        "Id": "328936544"
+       },
+       {
+        "Id": "335671605"
+       },
+       {
+        "Id": "354348945"
+       },
+       {
+        "Id": "358911386"
+       },
+       {
+        "Id": "375892740"
+       },
+       {
+        "Id": "378246469"
+       },
+       {
+        "Id": "431461022"
+       },
+       {
+        "Id": "436108680"
+       },
+       {
+        "Id": "456909667"
+       },
+       {
+        "Id": "487291621"
+       },
+       {
+        "Id": "505690608"
+       },
+       {
+        "Id": "520788626"
+       },
+       {
+        "Id": "530575871"
+       },
+       {
+        "Id": "535957164"
+       },
+       {
+        "Id": "573598210"
+       },
+       {
+        "Id": "581141264"
+       },
+       {
+        "Id": "608262442"
+       },
+       {
+        "Id": "627479635"
+       },
+       {
+        "Id": "633442900"
+       },
+       {
+        "Id": "646312523"
+       },
+       {
+        "Id": "659383082"
+       },
+       {
+        "Id": "666381127"
+       },
+       {
+        "Id": "669520541"
+       },
+       {
+        "Id": "671308466"
+       },
+       {
+        "Id": "675839367"
+       },
+       {
+        "Id": "777301135"
+       },
+       {
+        "Id": "779174018"
+       },
+       {
+        "Id": "780477623"
+       },
+       {
+        "Id": "805335745"
+       },
+       {
+        "Id": "846885721"
+       },
+       {
+        "Id": "923545924"
+       },
+       {
+        "Id": "923743735"
+       },
+       {
+        "Id": "932034674"
+       },
+       {
+        "Id": "934972760"
+       },
+       {
+        "Id": "985267907"
+       },
+       {
+        "Id": "985615113"
+       },
+       {
+        "Id": "989045613"
+       },
+       {
+        "Id": "991430848"
+       },
+       {
+        "Id": "1012036812"
+       },
+       {
+        "Id": "1012454372"
+       },
+       {
+        "Id": "1018831467"
+       },
+       {
+        "Id": "1043145087"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "426166445"
+        },
+        {
+         "Id": "625288806"
+        }
+       ],
+       "ShareSets": [
+        {
+         "Id": "1459522457"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "4057836364",
+      "Name": "Set_Switch_CQ_0",
+      "ObjectPath": "\\Events\\Default Work Unit\\Set_Switch_CQ\\Set_Switch_CQ_0",
+      "GUID": "{1C0B7B16-D146-4110-AE53-C39B7611E60C}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "4020365400",
+        "Id": "3431951472",
+        "Name": "CQ_0",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordQualitySwitch\\CQ_0",
+        "GUID": "{322FEA13-7A75-4643-8113-55E8E0FA843E}"
+       }
+      ]
+     },
+     {
+      "Id": "4057836365",
+      "Name": "Set_Switch_CQ_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Set_Switch_CQ\\Set_Switch_CQ_1",
+      "GUID": "{75D43A26-2F1F-40F2-A48D-F3E6FF3B6EFE}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "4020365400",
+        "Id": "3431951473",
+        "Name": "CQ_1",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordQualitySwitch\\CQ_1",
+        "GUID": "{C555593E-C917-45B0-9FAD-C1869889F2D2}"
+       }
+      ]
+     },
+     {
+      "Id": "4057836366",
+      "Name": "Set_Switch_CQ_2",
+      "ObjectPath": "\\Events\\Default Work Unit\\Set_Switch_CQ\\Set_Switch_CQ_2",
+      "GUID": "{92A5E796-C259-417C-9F03-45558723EE81}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "4020365400",
+        "Id": "3431951474",
+        "Name": "CQ_2",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordQualitySwitch\\CQ_2",
+        "GUID": "{9E9CC730-C222-40CE-844A-87029FEEC7FA}"
+       }
+      ]
+     },
+     {
+      "Id": "3015214332",
+      "Name": "Set_Switch_CV_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Set_Switch_CV\\Set_Switch_CV_01",
+      "GUID": "{E57B48B2-325D-4801-A16C-919CC06A2766}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2143296126",
+        "Id": "3293689696",
+        "Name": "CV_01",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_01",
+        "GUID": "{BC73E0C7-90AE-4B6B-82FC-F4A904CCC5E0}"
+       }
+      ]
+     },
+     {
+      "Id": "3015214335",
+      "Name": "Set_Switch_CV_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\Set_Switch_CV\\Set_Switch_CV_02",
+      "GUID": "{435A54BA-C4BD-41AD-83CC-248BB91C564D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2143296126",
+        "Id": "3293689699",
+        "Name": "CV_02",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_02",
+        "GUID": "{33F1BB1B-AE83-421D-9B23-DAC5B06C92EF}"
+       }
+      ]
+     },
+     {
+      "Id": "3015214334",
+      "Name": "Set_Switch_CV_03",
+      "ObjectPath": "\\Events\\Default Work Unit\\Set_Switch_CV\\Set_Switch_CV_03",
+      "GUID": "{01FA5DDF-266A-4BB8-9511-7829FDD656E9}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2143296126",
+        "Id": "3293689698",
+        "Name": "CV_03",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_03",
+        "GUID": "{91DE5B9C-20AE-4149-9A5A-EBA86F0DAA2F}"
+       }
+      ]
+     },
+     {
+      "Id": "3015214329",
+      "Name": "Set_Switch_CV_04",
+      "ObjectPath": "\\Events\\Default Work Unit\\Set_Switch_CV\\Set_Switch_CV_04",
+      "GUID": "{B0A64158-02DD-46B7-96F3-A0250B97B807}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2143296126",
+        "Id": "3293689701",
+        "Name": "CV_04",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_04",
+        "GUID": "{E5079983-77CB-468C-9C49-D1B3DDFDCF26}"
+       }
+      ]
+     },
+     {
+      "Id": "3015214328",
+      "Name": "Set_Switch_CV_05",
+      "ObjectPath": "\\Events\\Default Work Unit\\Set_Switch_CV\\Set_Switch_CV_05",
+      "GUID": "{D72573EC-7225-4D57-89B9-E51879704EAB}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2143296126",
+        "Id": "3293689700",
+        "Name": "CV_05",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_05",
+        "GUID": "{A0E26D48-056B-4E8F-9C35-75C7BCD466B0}"
+       }
+      ]
+     },
+     {
+      "Id": "3015214331",
+      "Name": "Set_Switch_CV_06",
+      "ObjectPath": "\\Events\\Default Work Unit\\Set_Switch_CV\\Set_Switch_CV_06",
+      "GUID": "{80C5731B-0B52-47CE-A717-852EE78873AB}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2143296126",
+        "Id": "3293689703",
+        "Name": "CV_06",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_06",
+        "GUID": "{AF8EDC4F-AEB8-4B65-867F-2A69676E8571}"
+       }
+      ]
+     },
+     {
+      "Id": "3015214330",
+      "Name": "Set_Switch_CV_07",
+      "ObjectPath": "\\Events\\Default Work Unit\\Set_Switch_CV\\Set_Switch_CV_07",
+      "GUID": "{FAB9739B-53CC-43E5-9A5D-C4CBC1981611}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2143296126",
+        "Id": "3293689702",
+        "Name": "CV_07",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_07",
+        "GUID": "{62651FF2-38E2-4B2F-BC58-6F08C794F9D1}"
+       }
+      ]
+     },
+     {
+      "Id": "3015214325",
+      "Name": "Set_Switch_CV_08",
+      "ObjectPath": "\\Events\\Default Work Unit\\Set_Switch_CV\\Set_Switch_CV_08",
+      "GUID": "{5C831017-95F4-441E-B89E-F85CBCFA4BCB}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2143296126",
+        "Id": "3293689705",
+        "Name": "CV_08",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_08",
+        "GUID": "{B46768A6-5C31-4DB2-AA1B-9A32622B6983}"
+       }
+      ]
+     },
+     {
+      "Id": "3015214324",
+      "Name": "Set_Switch_CV_09",
+      "ObjectPath": "\\Events\\Default Work Unit\\Set_Switch_CV\\Set_Switch_CV_09",
+      "GUID": "{2A83164E-46CD-4123-8C6D-D922A3170D31}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2143296126",
+        "Id": "3293689704",
+        "Name": "CV_09",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_09",
+        "GUID": "{2B91EB22-CF82-4979-B384-62A7F7174A53}"
+       }
+      ]
+     },
+     {
+      "Id": "2998436618",
+      "Name": "Set_Switch_CV_10",
+      "ObjectPath": "\\Events\\Default Work Unit\\Set_Switch_CV\\Set_Switch_CV_10",
+      "GUID": "{43A66525-67F0-42E4-8F32-91D62C341E7D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2143296126",
+        "Id": "3276912014",
+        "Name": "CV_10",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_10",
+        "GUID": "{F5DDF920-73FF-47B2-9E0B-1E319B23836F}"
+       }
+      ]
+     },
+     {
+      "Id": "2998436619",
+      "Name": "Set_Switch_CV_11",
+      "ObjectPath": "\\Events\\Default Work Unit\\Set_Switch_CV\\Set_Switch_CV_11",
+      "GUID": "{A304D302-6B3B-4E9D-A534-258FEDAAA37A}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2143296126",
+        "Id": "3276912015",
+        "Name": "CV_11",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_11",
+        "GUID": "{A2F8379F-6FFD-4C74-9448-AF116A48BD84}"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1315679162",
+      "Name": "MovementEnergy",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MovementEnergy",
+      "GUID": "{B296102C-D54F-4F30-8E6D-9B9F727CB53F}"
+     },
+     {
+      "Id": "1410732335",
+      "Name": "HandHeight",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\HandHeight",
+      "GUID": "{66E21BBA-5822-4625-BB6D-3915039BECB3}"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2143296126",
+      "Name": "ChordVoicingSwitch_Unity",
+      "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity",
+      "GUID": "{F3975394-848A-4E1F-91F4-F0F6EB65F130}",
+      "Switches": [
+       {
+        "Id": "3276912014",
+        "Name": "CV_10",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_10",
+        "GUID": "{F5DDF920-73FF-47B2-9E0B-1E319B23836F}"
+       },
+       {
+        "Id": "3276912015",
+        "Name": "CV_11",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_11",
+        "GUID": "{A2F8379F-6FFD-4C74-9448-AF116A48BD84}"
+       },
+       {
+        "Id": "3293689696",
+        "Name": "CV_01",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_01",
+        "GUID": "{BC73E0C7-90AE-4B6B-82FC-F4A904CCC5E0}"
+       },
+       {
+        "Id": "3293689698",
+        "Name": "CV_03",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_03",
+        "GUID": "{91DE5B9C-20AE-4149-9A5A-EBA86F0DAA2F}"
+       },
+       {
+        "Id": "3293689699",
+        "Name": "CV_02",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_02",
+        "GUID": "{33F1BB1B-AE83-421D-9B23-DAC5B06C92EF}"
+       },
+       {
+        "Id": "3293689700",
+        "Name": "CV_05",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_05",
+        "GUID": "{A0E26D48-056B-4E8F-9C35-75C7BCD466B0}"
+       },
+       {
+        "Id": "3293689701",
+        "Name": "CV_04",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_04",
+        "GUID": "{E5079983-77CB-468C-9C49-D1B3DDFDCF26}"
+       },
+       {
+        "Id": "3293689702",
+        "Name": "CV_07",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_07",
+        "GUID": "{62651FF2-38E2-4B2F-BC58-6F08C794F9D1}"
+       },
+       {
+        "Id": "3293689703",
+        "Name": "CV_06",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_06",
+        "GUID": "{AF8EDC4F-AEB8-4B65-867F-2A69676E8571}"
+       },
+       {
+        "Id": "3293689704",
+        "Name": "CV_09",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_09",
+        "GUID": "{2B91EB22-CF82-4979-B384-62A7F7174A53}"
+       },
+       {
+        "Id": "3293689705",
+        "Name": "CV_08",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch_Unity\\CV_08",
+        "GUID": "{B46768A6-5C31-4DB2-AA1B-9A32622B6983}"
+       }
+      ]
+     },
+     {
+      "Id": "2972871816",
+      "Name": "ChordVoicingSwitch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch",
+      "GUID": "{72F89C50-94E5-49AE-9967-E6393F440AD9}",
+      "GameParameterRef": {
+       "Id": "1410732335"
+      },
+      "Switches": [
+       {
+        "Id": "3276912014",
+        "Name": "CV_10",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch\\CV_10",
+        "GUID": "{E4963081-473D-4FD4-BB5D-74465EC7D76B}"
+       },
+       {
+        "Id": "3276912015",
+        "Name": "CV_11",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch\\CV_11",
+        "GUID": "{63FF74B4-316E-4988-AB7E-96B597C5F86A}"
+       },
+       {
+        "Id": "3293689696",
+        "Name": "CV_01",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch\\CV_01",
+        "GUID": "{F24AA3E8-76F2-4931-AEE8-C1B3DEEF9AB9}"
+       },
+       {
+        "Id": "3293689698",
+        "Name": "CV_03",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch\\CV_03",
+        "GUID": "{D13E1D97-1D6C-494E-9DF8-E550E0ACC851}"
+       },
+       {
+        "Id": "3293689699",
+        "Name": "CV_02",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch\\CV_02",
+        "GUID": "{C3269969-95F0-420D-8507-178462BF2788}"
+       },
+       {
+        "Id": "3293689700",
+        "Name": "CV_05",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch\\CV_05",
+        "GUID": "{679E4573-BC42-4545-9822-256BCB7F3748}"
+       },
+       {
+        "Id": "3293689701",
+        "Name": "CV_04",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch\\CV_04",
+        "GUID": "{115290EE-9245-4CC2-9EFC-A199CBEF327D}"
+       },
+       {
+        "Id": "3293689702",
+        "Name": "CV_07",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch\\CV_07",
+        "GUID": "{D600D5CF-2A04-404B-9B97-6D51B0F10898}"
+       },
+       {
+        "Id": "3293689703",
+        "Name": "CV_06",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch\\CV_06",
+        "GUID": "{6F27A563-7417-4C38-AE3A-D1672B992899}"
+       },
+       {
+        "Id": "3293689704",
+        "Name": "CV_09",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch\\CV_09",
+        "GUID": "{D55C427B-45CB-48AF-8E47-3F3E86E09B43}"
+       },
+       {
+        "Id": "3293689705",
+        "Name": "CV_08",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordVoicingSwitch\\CV_08",
+        "GUID": "{144C69B2-1739-49A7-82A9-563286BCE7A2}"
+       }
+      ]
+     },
+     {
+      "Id": "4020365400",
+      "Name": "ChordQualitySwitch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\ChordQualitySwitch",
+      "GUID": "{E41466E0-8C1F-4D7C-84A0-322120281C9C}",
+      "Switches": [
+       {
+        "Id": "3431951472",
+        "Name": "CQ_0",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordQualitySwitch\\CQ_0",
+        "GUID": "{322FEA13-7A75-4643-8113-55E8E0FA843E}"
+       },
+       {
+        "Id": "3431951473",
+        "Name": "CQ_1",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordQualitySwitch\\CQ_1",
+        "GUID": "{C555593E-C917-45B0-9FAD-C1869889F2D2}"
+       },
+       {
+        "Id": "3431951474",
+        "Name": "CQ_2",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ChordQualitySwitch\\CQ_2",
+        "GUID": "{9E9CC730-C222-40CE-844A-87029FEEC7FA}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{5742CAC1-85FF-075A-63B7-B9676ACD6752}"
+ }
+}

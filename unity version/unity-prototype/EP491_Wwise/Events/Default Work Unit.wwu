@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{96099C42-5F70-40B9-836A-2C0420545DEC}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{96099C42-5F70-40B9-836A-2C0420545DEC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Piano" ID="{8C37EDD9-F7B9-479F-9738-2505248B6244}">
+					<ChildrenList>
+						<Action Name="" ID="{E3D97C46-E312-4845-A094-20FA154CF6E8}" ShortID="564268129">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Piano" ID="{14F18926-8921-4B6B-B7A3-3BFB83C0007D}" WorkUnitID="{00D5FEBE-ED6B-493F-8B7E-C951741005F8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Paint_State" ID="{877D9DDD-84CB-4331-AD3A-D228C429281A}">
+					<ChildrenList>
+						<Action Name="" ID="{E3E73E00-4380-4FBA-AF3E-681669238302}" ShortID="857234720">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Paint State Playlist" ID="{F4600E8E-E3E2-4772-AA85-517F7729F01B}" WorkUnitID="{060D0047-D4A3-43ED-9A59-CC56841A48D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Set_Switch_CQ" ID="{E4E3CB40-FDDD-44FB-8B1D-23A50D6171CC}" ShortID="877107999">
+					<ChildrenList>
+						<Event Name="Set_Switch_CQ_0" ID="{1C0B7B16-D146-4110-AE53-C39B7611E60C}">
+							<ChildrenList>
+								<Action Name="" ID="{F325CE71-3DD2-4278-93F7-D79F809E3652}" ShortID="962360019">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CQ_0" ID="{322FEA13-7A75-4643-8113-55E8E0FA843E}" WorkUnitID="{17E657EB-1E4A-41EF-B804-76EEC37A3572}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_CQ_1" ID="{75D43A26-2F1F-40F2-A48D-F3E6FF3B6EFE}">
+							<ChildrenList>
+								<Action Name="" ID="{B8BCC54E-B3B6-4482-94C7-159FA02FA921}" ShortID="244276834">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CQ_1" ID="{C555593E-C917-45B0-9FAD-C1869889F2D2}" WorkUnitID="{17E657EB-1E4A-41EF-B804-76EEC37A3572}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_CQ_2" ID="{92A5E796-C259-417C-9F03-45558723EE81}">
+							<ChildrenList>
+								<Action Name="" ID="{36351DC9-3FEA-4BA7-9A6E-9A9BB2E3A0CD}" ShortID="1040867891">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CQ_2" ID="{9E9CC730-C222-40CE-844A-87029FEEC7FA}" WorkUnitID="{17E657EB-1E4A-41EF-B804-76EEC37A3572}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_Chord_Voicing_Poll" ID="{1BBB7C8D-7E48-475B-A457-1F946881F05D}">
+					<ChildrenList>
+						<Action Name="" ID="{72F9F2A9-9260-40E2-96A9-C7445F2D134A}" ShortID="498724107">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chord Voicing Poll" ID="{215E9B28-6184-4C93-B7D5-8B20EF963FBC}" WorkUnitID="{060D0047-D4A3-43ED-9A59-CC56841A48D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Set_Switch_CV" ID="{CB752535-0B0F-42C6-AB64-257C52CFD400}" ShortID="1029899086">
+					<ChildrenList>
+						<Event Name="Set_Switch_CV_01" ID="{E57B48B2-325D-4801-A16C-919CC06A2766}">
+							<ChildrenList>
+								<Action Name="" ID="{0FAFB065-A9D9-4BC1-AB26-0556125B118C}" ShortID="82083319">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CV_01" ID="{BC73E0C7-90AE-4B6B-82FC-F4A904CCC5E0}" WorkUnitID="{17E657EB-1E4A-41EF-B804-76EEC37A3572}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_CV_02" ID="{435A54BA-C4BD-41AD-83CC-248BB91C564D}">
+							<ChildrenList>
+								<Action Name="" ID="{0CD9F233-F594-408E-BA6F-43ECCCF64B3E}" ShortID="636377011">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CV_02" ID="{33F1BB1B-AE83-421D-9B23-DAC5B06C92EF}" WorkUnitID="{17E657EB-1E4A-41EF-B804-76EEC37A3572}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_CV_03" ID="{01FA5DDF-266A-4BB8-9511-7829FDD656E9}">
+							<ChildrenList>
+								<Action Name="" ID="{F84C9E95-0E59-4F7E-9DA2-9B14A8E41BE6}" ShortID="510195523">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CV_03" ID="{91DE5B9C-20AE-4149-9A5A-EBA86F0DAA2F}" WorkUnitID="{17E657EB-1E4A-41EF-B804-76EEC37A3572}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_CV_04" ID="{B0A64158-02DD-46B7-96F3-A0250B97B807}">
+							<ChildrenList>
+								<Action Name="" ID="{CA3F327E-CA91-4796-886F-ACCB7FB4D4DA}" ShortID="25198291">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CV_04" ID="{E5079983-77CB-468C-9C49-D1B3DDFDCF26}" WorkUnitID="{17E657EB-1E4A-41EF-B804-76EEC37A3572}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_CV_05" ID="{D72573EC-7225-4D57-89B9-E51879704EAB}">
+							<ChildrenList>
+								<Action Name="" ID="{07E45781-57C9-42D3-AAE4-2A48145D0DD3}" ShortID="838782986">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CV_05" ID="{A0E26D48-056B-4E8F-9C35-75C7BCD466B0}" WorkUnitID="{17E657EB-1E4A-41EF-B804-76EEC37A3572}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_CV_06" ID="{80C5731B-0B52-47CE-A717-852EE78873AB}">
+							<ChildrenList>
+								<Action Name="" ID="{712EFD8A-8748-40FD-874C-896AEBDA5941}" ShortID="141633843">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CV_06" ID="{AF8EDC4F-AEB8-4B65-867F-2A69676E8571}" WorkUnitID="{17E657EB-1E4A-41EF-B804-76EEC37A3572}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_CV_07" ID="{FAB9739B-53CC-43E5-9A5D-C4CBC1981611}">
+							<ChildrenList>
+								<Action Name="" ID="{4F0288DE-E6FF-49AB-8FF7-7A575739C270}" ShortID="722690648">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CV_07" ID="{62651FF2-38E2-4B2F-BC58-6F08C794F9D1}" WorkUnitID="{17E657EB-1E4A-41EF-B804-76EEC37A3572}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_CV_08" ID="{5C831017-95F4-441E-B89E-F85CBCFA4BCB}">
+							<ChildrenList>
+								<Action Name="" ID="{323E5CCC-03C6-44A4-A693-B0A4F19689A5}" ShortID="606622445">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CV_08" ID="{B46768A6-5C31-4DB2-AA1B-9A32622B6983}" WorkUnitID="{17E657EB-1E4A-41EF-B804-76EEC37A3572}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_CV_09" ID="{2A83164E-46CD-4123-8C6D-D922A3170D31}">
+							<ChildrenList>
+								<Action Name="" ID="{C00EC337-151B-43F2-A3FA-DF76ADE1B6F7}" ShortID="571210213">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CV_09" ID="{2B91EB22-CF82-4979-B384-62A7F7174A53}" WorkUnitID="{17E657EB-1E4A-41EF-B804-76EEC37A3572}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_CV_10" ID="{43A66525-67F0-42E4-8F32-91D62C341E7D}">
+							<ChildrenList>
+								<Action Name="" ID="{23393117-21BF-40D3-935C-432EF636E12F}" ShortID="245258543">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CV_10" ID="{F5DDF920-73FF-47B2-9E0B-1E319B23836F}" WorkUnitID="{17E657EB-1E4A-41EF-B804-76EEC37A3572}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_CV_11" ID="{A304D302-6B3B-4E9D-A534-258FEDAAA37A}">
+							<ChildrenList>
+								<Action Name="" ID="{A2EAD551-673E-4615-8D3C-AB9B022320B1}" ShortID="582432031">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CV_11" ID="{A2F8379F-6FFD-4C74-9448-AF116A48BD84}" WorkUnitID="{17E657EB-1E4A-41EF-B804-76EEC37A3572}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

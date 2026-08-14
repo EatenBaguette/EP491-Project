@@ -1,0 +1,41 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2143296126	ChordVoicingSwitch_Unity			\Default Work Unit\ChordVoicingSwitch_Unity	
+	2972871816	ChordVoicingSwitch			\Default Work Unit\ChordVoicingSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	3276912014	CV_10	ChordVoicingSwitch_Unity			
+	3276912015	CV_11	ChordVoicingSwitch_Unity			
+	3293689696	CV_01	ChordVoicingSwitch_Unity			
+	3293689698	CV_03	ChordVoicingSwitch_Unity			
+	3293689699	CV_02	ChordVoicingSwitch_Unity			
+	3293689700	CV_05	ChordVoicingSwitch_Unity			
+	3293689701	CV_04	ChordVoicingSwitch_Unity			
+	3293689702	CV_07	ChordVoicingSwitch_Unity			
+	3293689703	CV_06	ChordVoicingSwitch_Unity			
+	3293689704	CV_09	ChordVoicingSwitch_Unity			
+	3293689705	CV_08	ChordVoicingSwitch_Unity			
+	3276912014	CV_10	ChordVoicingSwitch			
+	3276912015	CV_11	ChordVoicingSwitch			
+	3293689696	CV_01	ChordVoicingSwitch			
+	3293689698	CV_03	ChordVoicingSwitch			
+	3293689699	CV_02	ChordVoicingSwitch			
+	3293689700	CV_05	ChordVoicingSwitch			
+	3293689701	CV_04	ChordVoicingSwitch			
+	3293689702	CV_07	ChordVoicingSwitch			
+	3293689703	CV_06	ChordVoicingSwitch			
+	3293689704	CV_09	ChordVoicingSwitch			
+	3293689705	CV_08	ChordVoicingSwitch			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2012657067	New_State_Group			\Default Work Unit\New_State_Group	
+
+State	ID	Name	State Group			Notes
+	748895195	None	New_State_Group			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0B8E23D2-117A-407C-B5B8-4D836A63877E}" SchemaVersion="123">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{0B8E23D2-117A-407C-B5B8-4D836A63877E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Main Soundcaster" ID="{A0323C64-B61F-4623-8D0F-7E720901FDF3}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Paint_State" ID="{877D9DDD-84CB-4331-AD3A-D228C429281A}" WorkUnitID="{96099C42-5F70-40B9-836A-2C0420545DEC}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Piano_C1" ID="{0F1E48C0-9BAE-4334-B094-21FE0B48249A}" WorkUnitID="{00D5FEBE-ED6B-493F-8B7E-C951741005F8}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Piano_C5" ID="{A12CD743-7CB0-4116-BD91-FDDE195CF95F}" WorkUnitID="{00D5FEBE-ED6B-493F-8B7E-C951741005F8}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Piano_E4" ID="{6BFC9C6A-1DD4-4FC9-B9CE-CCC2A55F4FD0}" WorkUnitID="{00D5FEBE-ED6B-493F-8B7E-C951741005F8}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Piano_G#4" ID="{63152EBC-328D-4FBB-96DB-FD30E6993754}" WorkUnitID="{00D5FEBE-ED6B-493F-8B7E-C951741005F8}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Piano_C2" ID="{326944E6-E979-4A23-851A-689895F18F55}" WorkUnitID="{00D5FEBE-ED6B-493F-8B7E-C951741005F8}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Piano_E1" ID="{D2891E0D-846E-4FE1-AFB4-96EB095D9693}" WorkUnitID="{00D5FEBE-ED6B-493F-8B7E-C951741005F8}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Piano_G#1" ID="{401E753F-FD30-4582-9B4E-25405CD9DA57}" WorkUnitID="{00D5FEBE-ED6B-493F-8B7E-C951741005F8}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Piano_C3" ID="{AFF7BE8B-037D-4865-9869-B3F24432D0B9}" WorkUnitID="{00D5FEBE-ED6B-493F-8B7E-C951741005F8}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Piano_E2" ID="{84C37350-BD36-4C1C-AB5A-F459D20B8C2F}" WorkUnitID="{00D5FEBE-ED6B-493F-8B7E-C951741005F8}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Piano_G#2" ID="{89207587-A867-460F-BA12-53D80EE78736}" WorkUnitID="{00D5FEBE-ED6B-493F-8B7E-C951741005F8}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Piano_C4" ID="{2FD2E885-016C-4546-9E82-0EABEFFC3D59}" WorkUnitID="{00D5FEBE-ED6B-493F-8B7E-C951741005F8}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Piano_E3" ID="{4B92CC92-CB0B-45F3-BD4E-FF0DBC5B4FFA}" WorkUnitID="{00D5FEBE-ED6B-493F-8B7E-C951741005F8}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Piano_G#3" ID="{6BC6BB5F-2EE8-4830-99B2-D2655D2DD872}" WorkUnitID="{00D5FEBE-ED6B-493F-8B7E-C951741005F8}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

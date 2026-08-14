@@ -1,0 +1,98 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1479974693	Play_Piano			\Default Work Unit\Play_Piano	
+	2998436618	Set_Switch_CV_10			\Default Work Unit\Set_Switch_CV\Set_Switch_CV_10	
+	2998436619	Set_Switch_CV_11			\Default Work Unit\Set_Switch_CV\Set_Switch_CV_11	
+	3015214324	Set_Switch_CV_09			\Default Work Unit\Set_Switch_CV\Set_Switch_CV_09	
+	3015214325	Set_Switch_CV_08			\Default Work Unit\Set_Switch_CV\Set_Switch_CV_08	
+	3015214328	Set_Switch_CV_05			\Default Work Unit\Set_Switch_CV\Set_Switch_CV_05	
+	3015214329	Set_Switch_CV_04			\Default Work Unit\Set_Switch_CV\Set_Switch_CV_04	
+	3015214330	Set_Switch_CV_07			\Default Work Unit\Set_Switch_CV\Set_Switch_CV_07	
+	3015214331	Set_Switch_CV_06			\Default Work Unit\Set_Switch_CV\Set_Switch_CV_06	
+	3015214332	Set_Switch_CV_01			\Default Work Unit\Set_Switch_CV\Set_Switch_CV_01	
+	3015214334	Set_Switch_CV_03			\Default Work Unit\Set_Switch_CV\Set_Switch_CV_03	
+	3015214335	Set_Switch_CV_02			\Default Work Unit\Set_Switch_CV\Set_Switch_CV_02	
+	3066728522	Play_Chord_Voicing_Poll			\Default Work Unit\Play_Chord_Voicing_Poll	
+	3662170736	Play_Paint_State			\Default Work Unit\Play_Paint_State	
+	4057836364	Set_Switch_CQ_0			\Default Work Unit\Set_Switch_CQ\Set_Switch_CQ_0	
+	4057836365	Set_Switch_CQ_1			\Default Work Unit\Set_Switch_CQ\Set_Switch_CQ_1	
+	4057836366	Set_Switch_CQ_2			\Default Work Unit\Set_Switch_CQ\Set_Switch_CQ_2	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1315679162	MovementEnergy			\Default Work Unit\MovementEnergy	
+	1410732335	HandHeight			\Default Work Unit\HandHeight	
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	78080177	Modulator Envelope (Custom)				
+	81970162	Modulator Envelope (Custom)				
+	158033040	Modulator Envelope (Custom)				
+	196096687	Modulator Envelope (Custom)				
+	248349803	Modulator Envelope (Custom)				
+	257130287	Modulator Envelope (Custom)				
+	515773166	Modulator Envelope (Custom)				
+	593699737	Modulator Envelope (Custom)				
+	674826878	Modulator Envelope (Custom)				
+	906269538	Modulator Envelope (Custom)				
+	934747823	Modulator Envelope (Custom)				
+	992277994	Modulator Envelope (Custom)				
+	1036614874	Modulator Envelope (Custom)				
+
+Effect plug-ins	ID	Name	Type				Notes
+	426166445	Compressor (Custom)	Wwise Compressor			
+	625288806	Compressor (Custom)	Wwise Compressor			
+	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	81014218	Piano_C1_64_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\3F\{3F340C2A-354D-2D08-521D-C017CA70434D}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C1\Piano_C1_64_Release		1536096
+	108799585	Piano_G#3_64_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\EC\{ECF635BB-514E-1480-9A25-1DCB03FD94C1}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#3\Piano_G#3_64_Release		1536096
+	160603343	Piano_G#2_127_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\7D\{7DAD2E37-8568-C984-7BDD-46B159731BEA}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#2\Piano_G#2_127_Release		1536096
+	163540962	Piano_E3_64_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\74\{741672D3-366E-1B97-5EAA-E720E4892F0A}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E3\Piano_E3_64_Release		1536096
+	187290619	Piano_E3_127_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\E1\{E1423ED7-D19C-6C61-527D-51DC625A2CDD}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E3\Piano_E3_127_Release		1536096
+	220648264	Piano_C5_127_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\84\{8479CAF4-A35B-2F83-263F-9D58F81041FB}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C5\Piano_C5_127_Release		1536096
+	249786026	Piano_G#3_64	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\3D\{3D95BDBC-43A0-B6DD-6783-5D99C9E20A7E}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#3\Piano_G#3_64		2880144
+	253689902	Piano_G#3_127_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\7C\{7C366CB7-94E9-66AD-9177-A2DB2859A90C}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#3\Piano_G#3_127_Release		1536096
+	293726394	Piano_E1_127_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\95\{957ECD0F-0233-3DF2-7FE9-03A1E88FFA77}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E1\Piano_E1_127_Release		1536096
+	311776810	Piano_G#4_127_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\9F\{9F6FBB6B-FA6B-B1AE-01A3-4413C40471F6}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#4\Piano_G#4_127_Release		1536096
+	328936544	Piano_E1_64_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\0D\{0D6497AA-6D78-C9F7-2161-189FE1B29E88}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E1\Piano_E1_64_Release		1536096
+	335671605	Piano_C3_127	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\B0\{B04DF2FF-F829-1626-46C2-A04250073FDD}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C3\Piano_C3_127		2880144
+	345907256	Switch Trigger	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\BC\{BC77326C-E5F7-3557-ACD2-A5A5DCDE695E}.wem		\Interactive Music Hierarchy\Default Work Unit\Game State Switch\PaintState\Paint State Playlist\Main Loop\Switch Trigger		192096
+	354348945	Piano_C3_64	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\26\{261CB9B0-D0E2-EFCB-2D96-5A40883E6083}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C3\Piano_C3_64		2880144
+	358911386	Piano_E2_64_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\A4\{A4A4B2E5-0F64-7C12-B60D-8B9192D12099}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E2\Piano_E2_64_Release		1536096
+	375892740	Piano_G#4_127	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\B1\{B1B04690-9935-A8B3-1D5C-2E0FE72C0C08}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#4\Piano_G#4_127		2880144
+	378246469	Piano_G#1_64	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\FB\{FBE634FA-86D8-23A9-F7E5-F00143F526A7}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#1\Piano_G#1_64		2880144
+	431461022	Piano_C2_127_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\B1\{B1275A75-E145-88BC-4262-4A919E2E09F8}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C2\Piano_C2_127_Release		1536096
+	436108680	Piano_G#3_127	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\82\{82A2449D-CD0D-9D25-25B2-00D67CD2AB53}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#3\Piano_G#3_127		2880144
+	456909667	Piano_C5_64	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\3D\{3DFD9AF6-1072-DAB9-65E9-71E3EDCB482C}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C5\Piano_C5_64		2880144
+	487291621	Piano_C1_127	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\EA\{EA69117D-A25E-D88E-DDEF-0980E47E099C}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C1\Piano_C1_127		2880144
+	505690608	Piano_G#1_64_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\3D\{3D72FBA6-1016-E9ED-D43A-305C501AB050}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#1\Piano_G#1_64_Release		1536096
+	520788626	Piano_C4_127	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\F5\{F5DE691E-34AA-F612-ED74-9A0BCDE016A1}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C4\Piano_C4_127		2880144
+	530575871	Piano_E1_127	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\27\{2788FB42-7EEC-5571-29F3-2CF2CE5FFD2A}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E1\Piano_E1_127		2880144
+	535957164	Piano_E4_64	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\6B\{6B662AD0-E8D9-3FF5-73C7-7A6051B4C055}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E4\Piano_E4_64		2880144
+	573598210	Piano_C1_127_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\DB\{DBA43242-54CA-5698-23FD-F303976D7A06}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C1\Piano_C1_127_Release		1536096
+	581141264	Piano_C4_64	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\C4\{C4A38AED-4397-EC51-A19C-84FE411806CA}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C4\Piano_C4_64		2880144
+	608262442	Piano_E2_127_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\8D\{8D287196-6AF8-E277-3B46-0EAC9F159015}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E2\Piano_E2_127_Release		1536096
+	627479635	Piano_G#4_64_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\59\{59625FC6-68F0-0133-92A7-CBAF05C5E2A9}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#4\Piano_G#4_64_Release		1536096
+	633442900	Piano_G#2_64_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\4E\{4E578C66-8993-AC55-D19C-67A4AEFB4510}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#2\Piano_G#2_64_Release		1536096
+	646312523	Piano_G#1_127	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\9B\{9B8341BD-3B03-8766-453F-765ADD4037EC}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#1\Piano_G#1_127		2880144
+	659383082	Piano_C2_64	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\0C\{0C59E2D2-85D9-46CF-E093-95FFD22361BB}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C2\Piano_C2_64		2880144
+	666381127	Piano_C1_64	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\9C\{9CB27366-958F-3FC0-2760-DA53C6170D99}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C1\Piano_C1_64		2880144
+	669520541	Piano_E4_127_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\B1\{B16CD0F5-5B0F-AA04-51CF-84A9C9AA8CDB}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E4\Piano_E4_127_Release		1536096
+	671308466	Piano_E2_64	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\EE\{EE11E670-97D1-9A53-A211-36ED30FE480E}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E2\Piano_E2_64		2880144
+	675839367	Piano_G#2_64	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\A3\{A3D642D8-E49E-19CD-DDD7-DF465853EB91}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#2\Piano_G#2_64		2880144
+	777301135	Piano_C2_127	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\C0\{C0C1C08B-0871-F0FE-A762-0BA0033EBA92}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C2\Piano_C2_127		2880144
+	779174018	Piano_E1_64	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\4D\{4DFD7CD4-EC01-9A1F-DB18-2282834FE2C0}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E1\Piano_E1_64		2880144
+	780477623	Piano_C4_127_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\8B\{8B5FFF67-CCF6-A9D6-2119-E5D1F30173D5}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C4\Piano_C4_127_Release		1536096
+	805335745	Piano_E3_64	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\E2\{E27ED8FD-535F-F017-7189-C4F42AF715B5}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E3\Piano_E3_64		2880144
+	846885721	Piano_G#4_64	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\4F\{4F4A3EDB-9416-76EA-0CAF-D306435039BA}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#4\Piano_G#4_64		2880144
+	923545924	Piano_C5_127	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\47\{478EDC7F-ABEB-72C0-4619-FF429FF36AC8}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C5\Piano_C5_127		2880144
+	923743735	Piano_C3_64_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\18\{186C431D-578F-64EE-19FC-0421CC127AE3}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C3\Piano_C3_64_Release		1536096
+	932034674	Piano_C3_127_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\76\{76EFD5C4-0E27-5C73-A2EF-B20939656584}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C3\Piano_C3_127_Release		1536096
+	934972760	Piano_E2_127	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\1F\{1FC08B62-1E99-99D4-8F9C-54B32032249C}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E2\Piano_E2_127		2880144
+	985267907	Piano_C4_64_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\7D\{7DB0FE4D-01D6-8BF7-BD7C-957FB3D38579}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C4\Piano_C4_64_Release		1536096
+	985615113	Piano_C5_64_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\84\{8480A659-E950-21D7-027F-9B2E64834E92}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C5\Piano_C5_64_Release		1536096
+	989045613	Piano_G#2_127	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\12\{1270998B-16D7-BD07-77EC-9D092B48345F}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#2\Piano_G#2_127		2880144
+	991430848	Piano_E3_127	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\10\{102EB736-037D-C15A-DC4E-351202B9CD76}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E3\Piano_E3_127		2880144
+	1012036812	Piano_E4_127	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\22\{22D2DED8-0BF8-A378-D2D2-D242D856E775}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E4\Piano_E4_127		2880144
+	1012454372	Piano_G#1_127_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\6F\{6F8DD908-4137-9DDA-4F58-3C99B48E559D}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_G#1\Piano_G#1_127_Release		1536096
+	1018831467	Piano_E4_64_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\08\{08D5A006-070D-AB3D-B3E2-056784304245}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_E4\Piano_E4_64_Release		1536096
+	1043145087	Piano_C2_64_Release	Y:\Int Working Media Drive\Berklee\EP491\EP491_Wwise\.cache\93\{93C8A1C3-0839-7E96-D24E-1B6A5C4D3074}.wem		\Actor-Mixer Hierarchy\Music\Piano\Piano_C2\Piano_C2_64_Release		1536096
+

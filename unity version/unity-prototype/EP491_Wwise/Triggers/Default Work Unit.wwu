@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9E9CDA92-3343-49A0-8FAB-9248257BC312}" SchemaVersion="123">
+	<Triggers>
+		<WorkUnit Name="Default Work Unit" ID="{9E9CDA92-3343-49A0-8FAB-9248257BC312}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="TriggerChord01" ID="{284CEEFC-AD89-4999-B598-67837A50975A}"/>
+				<Trigger Name="TriggerChord02" ID="{FA10D148-7F52-4BF4-ACA4-FE0CB09E722B}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Triggers>
+</WwiseDocument>

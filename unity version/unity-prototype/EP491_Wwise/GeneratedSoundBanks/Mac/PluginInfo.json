@@ -1,0 +1,33 @@
+{
+ "PluginInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "PluginLibs": [
+   {
+    "LibName": "Wwise Compressor",
+    "LibId": "7077891",
+    "Type": "Effect",
+    "DLL": "AkCompressor",
+    "StaticLib": "AkCompressorFX"
+   },
+   {
+    "LibName": "Wwise Peak Limiter",
+    "LibId": "7208963",
+    "Type": "Effect",
+    "DLL": "AkPeakLimiter",
+    "StaticLib": "AkPeakLimiterFX"
+   },
+   {
+    "LibName": "System",
+    "LibId": "11403271",
+    "Type": "AudioDevice"
+   },
+   {
+    "LibName": "No Output",
+    "LibId": "11862023",
+    "Type": "AudioDevice"
+   }
+  ],
+  "FileHash": "{2821D649-5293-B7AA-B57D-E78106322106}"
+ }
+}
